@@ -1,0 +1,40 @@
+* {
+    font-family: "Stardos Stencil";
+}
+
+div {
+    background-color: #008000;
+    color: white;
+}
+
+body {
+    background-color: #00CED1;
+}
+
+#second, #second div {
+    background-color: blue;
+}
+
+div {
+    background-color: #FF00FF;
+}
+
+.large, .big {
+    font-size: 4em;
+}
+
+#second div {
+    color: black;
+}
+
+div section div {
+    color: red;
+}
+
+.favorite div {
+    color: green;
+}
+
+#second :first-child {
+    color: yellow;
+}

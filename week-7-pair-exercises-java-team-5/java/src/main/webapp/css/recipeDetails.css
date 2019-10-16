@@ -1,0 +1,123 @@
+body {
+	width: 100%;
+	background-color: #212121;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+}
+
+body, header, nav {
+	margin: 0px;
+}
+
+header {
+	background-color: #0099CC;
+	color: white;
+	padding: 10px 10px;
+}
+
+nav {
+	background-color: #8DC63F;
+	margin-bottom: 20px;
+	padding: 5px;
+	height: 50px;
+}
+
+nav ul {
+	float: left;
+}
+
+nav li {
+	list-style-type: none;
+	color: white;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	font-size: 1.3em;
+	float: left;
+}
+
+nav li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	text-decoration: underline;
+}
+
+section {
+	clear: both;
+	display: flex;
+	width: 80%;
+	margin: 20px auto;
+	vertical-align: top;
+	text-align: center;
+	min-height: 450px;
+	background-color: #FFF;
+	border-radius: 7px;
+}
+
+#main-content {
+	display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "img info info ."
+    "ingredients ingredients . ."
+    "prep prep prep prep";
+    grid-column-gap: 10px;
+    font-size: 1.25em;
+}
+
+#img {
+	grid-area: img;
+}
+
+#infoSection {
+	grid-area: info;
+}
+
+#ingredientList {
+	grid-area: ingredients;
+}
+
+#prepSteps {
+	grid-area: prep;
+}
+
+#img {
+	margin: 10px;
+}
+#img > img{
+	height:250px;
+}
+
+#infoSection {
+	margin: 0px;
+	font-weight: normal;
+	text-align: left;
+}
+
+#infoSection > h2{
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+#infoSection > p{
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+#ingredientList {
+	margin: 20px;
+	text-align: left;
+}
+
+#prepSteps {
+	border-top: 2px solid black;
+	margin-left: 20px;
+	text-align: left;
+}
+
+#prepSteps > h3{
+	margin-top: 20px;
+}

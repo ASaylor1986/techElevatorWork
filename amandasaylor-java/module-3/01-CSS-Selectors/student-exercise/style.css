@@ -1,0 +1,115 @@
+:root {
+  --top-row-height: 120px;
+  --gutter: 20px;
+  --blue: #00adee;
+  --light-blue: rgba(0, 173, 238, 0.4);
+  --green: #8cc36f;
+  --light-green: rgba(170, 239, 135, 0.8);
+  --bg-color: rgba(192, 192, 192, 0.1);
+  --subheading: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+body {
+  background-color: rgba(192, 192, 192, 0.1);
+}
+aside {
+  position: fixed;
+  top: center;
+  width: 200px;
+  height: 100%;
+  color: #00ADEE;
+  border-right: 1px solid rgba(0, 173, 238, 0.4);
+
+}
+
+aside img {
+  width: 150px;
+  margin-left: 20px;
+  justify-content: center;
+}
+
+ul {
+
+  padding: 20px;
+  margin: 0px;
+  list-style-type: none;
+  font-size: 25px;
+  color: #00ADEE;
+  text-decoration: none;
+}
+
+a {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: #00ADEE;
+  text-decoration: none;
+  list-style-type: none;
+  line-height: 50px;
+  border-bottom: 1px solid rgba(0, 173, 238, 0.4);
+}
+
+
+main {
+  margin-left: 200px;
+  padding: 10px;
+  width: 100%;
+}
+
+main > img {
+  display: flex;
+  max-width: 86%;
+
+}
+
+header {
+  position: relative;
+  vertical-align: top;
+}
+
+header img {
+  height: 150px;
+}
+
+.subheading {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+section {
+  margin: 20px;
+  max-width: 86%;
+  
+}
+
+main section div {
+  padding: 20px;
+  float: left;
+  width: 33%;
+}
+
+div > h2 {
+  color: #8CC36F;
+}
+#our-work {
+  border-right: 1px solid rgba(170, 239, 135, 0.8);
+  border-left: 1px solid rgba(170, 239, 135, 0.8);
+}
+footer {
+  padding: 30px;
+  max-width: 86%;
+}
+footer >p {
+  text-align: left;
+  top: 0;
+  padding: 5px;
+}
+
+#social {
+  display: none;
+}
+

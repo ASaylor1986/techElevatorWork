@@ -1,0 +1,75 @@
+package com.techelevator;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class QuizMaker {
+	
+	static Scanner myScanner = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		
+		List <QuizQuestion> testList = new ArrayList<>();
+		
+		System.out.println("Where is the quiz file? ");
+		String sourcePath = myScanner.nextLine();
+		File myFile = new File(sourcePath);
+		
+		try (Scanner myScanner = new Scanner(myFile)) { 
+			while (myScanner.hasNextLine()) {
+				String questionString = myScanner.nextLine();
+				QuizQuestion currentQuestion = new QuizQuestion(questionString);
+				testList.add(currentQuestion);
+			}
+		}
+		catch (FileNotFoundException e){
+			System.out.println("File not found!");
+		}
+		for (QuizQuestion question : testList) {
+			System.out.println(question.getQuestion());
+			for (QuizQuestion answer : testList) {
+			System.out.println(answer.getAnswers());
+			}
+		}
+
+	}
+}
+
+
+
+
+
+package com.techelevator;
+
+public class QuizQuestion {
+	
+	private String question;
+	private String[] answers = new String[4];
+	private int correctAnswerIndex;
+
+	public QuizQuestion(String questionAndAnswers) {
+		String[] questionParts = questionAndAnswers.split("\\|");
+		question = questionParts[0];
+		for (int i = 1; i < questionParts.length -1; i++) {
+			String ans = questionParts[i];
+			if (ans.endsWith("*")) {
+				correctAnswerIndex = i-1;
+				ans = ans.substring(0, ans.length()-1);
+			}
+			answers[i-1] = ans;
+		}
+	}
+	public String getQuestion() {
+		return question;
+	}
+	public String[] getAnswers() {
+		return answers;
+	}
+	public int getCorrectAnswersIndex() {
+		return correctAnswerIndex;
+	}
+	
+}

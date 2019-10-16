@@ -1,0 +1,103 @@
+body {
+	width: 100%;
+	background-color: #212121;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+}
+
+body, header, nav {
+	margin: 0px;
+}
+
+header {
+	background-color: #0099CC;
+	color: white;
+	padding: 10px 10px;
+}
+
+nav {
+	background-color: #8DC63F;
+	margin-bottom: 20px;
+	padding: 5px;
+	height: 50px;
+}
+
+nav ul {
+	float: left;
+}
+
+nav li {
+	list-style-type: none;
+	color: white;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	font-size: 1.3em;
+	float: left;
+}
+
+nav li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	text-decoration: underline;
+}
+
+section {
+	clear: both;
+	display: flex;
+	width: 80%;
+	margin: 20px auto;
+
+	vertical-align: top;
+	text-align: center;
+	min-height: 450px;
+	background-color: #FFF;
+	border-radius: 7px;
+}
+
+#recipes {
+	margin-left: 30px;
+	margin-right: 40px;
+}
+
+.grey {
+	background-color: #b3b3b3;
+	text-align: center;
+
+}
+
+#headline {
+	height: 50px;
+	font-size: 2.1em;
+	padding: 25px;
+
+}
+
+#foodPic {
+	width: 55%;
+	margin-top: 30px;
+}
+
+
+#starRating {
+	height: 35px;
+}
+
+#table-contents {
+	font-size: 1.1em;
+}
+
+p {
+	margin: 5px;
+
+}
+.type {
+	height: 27px;
+}
+
+#title {
+	font-weight: bold;
+}
